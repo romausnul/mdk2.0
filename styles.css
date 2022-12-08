@@ -1,10 +1,97 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+html {
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+p {
+	color: red
+      }
+h1{
+	color:rgb(255,236,114);
+}
+<h1>Заголовок h1</h1>
+ol {
+	color:#086CA2;
+}
+<table border="2" width="500" height="700">
+	<link rel="stylesheet" href="styles.css">
+				<tbody><tr>
+					<td>0</td>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<td>a</td>
+					<td>b</td>
+					<td>c</td>
+					<td>d</td>
+					<td>e</td>
+				</tr>
+				<link rel="stylesheet" href="styles.css">
+</tbody></table>
+ p {
+ 	width: 300px; 
+ 	height: 300px;
+ }
+ td {
+ 	width: 200px; 
+ 	height: 100px;
+ }
+
+ <table border="1" width="300" height="100">
+			<tbody><tr>
+				<td>Иван</td>
+				<td>Иванов</td>
+				<td>200$</td>
+			</tr>
+			<tr>
+				<td>Николай</td>
+				<td>Петров</td>
+				<td>300$</td>
+			</tr>
+			<tr>
+				<td>Владимир</td>
+				<td>Сидоров</td>
+				<td>400$</td>
+			</tr>
+		</tbody></table>
+p {
+	font-family: Arial;
+      }
+h1{
+	color:rgb(255,236,114);
 }
 
-body {
-  height: 100vh;
-  background: #060AB2;
-}
+<table border="1" width="300" height="100">
+			<tbody><tr>
+				<td>Иван</td>
+				<td>Иванов</td>
+				<td>200$</td>
+			</tr>
+			<tr>
+				<td>Николай</td>
+				<td>Петров</td>
+				<td>300$</td>
+			</tr>
+			<tr>
+				<td>Владимир</td>
+				<td>Сидоров</td>
+				<td>400$</td>
+			</tr>
+		</tbody></table>
+
+		
