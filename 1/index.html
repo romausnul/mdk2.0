@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>КОМАНДЫ ОПЕРАЦИОННОЙ СИСТЕМЫ ДОС
+
+	</title>
+	<meta name="description" content="">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link rel="shortcut icon" href="img/favicon.png"> -->
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
+
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+
+	<!-- Font Awesome CSS-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Normalize/Reset CSS-->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<!-- Main CSS-->
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body id="welcome">
+
+	<aside class="left-sidebar">
+		<div class="logo">
+			<a href="#welcome">
+				<h1>Команды операционной системы дос</h1>
+			</a>
+		</div>
+		<nav class="left-nav">
+			<ul id="nav">
+				<li class="current"><a href="#welcome">Управление файлами</a></li>
+				<li><a href="#installation">Управления дисками</li>
+				<li><a href="#tmpl-structure">Профилактика</a></li>
+				<li><a href="#css-structure">Настройка DOS</a></li>
+				<li><a href="#javascript">Фотки для просмотра</a></li>
+		
+			</ul>
+		</nav>
+	</aside>
+
+	<div id="main-wrapper">
+		<div class="main-content">
+			<section id="welcome">
+				<div class="content-header">
+					<h1>САЙТ ДЛЯ МДК</h1>
+				</div>
+				<div class="welcome">
+					<h2 class="twenty" >Управление файлами</h2>
+
+					<p>Команда DIR - просмотр каталога
+						К наиболее часто используемым командам относится команда просмотра содержимого каталога DIR. Работу на персональном компьютере вы, как правило, начинаете с просмотра каталога, чтобы убедиться в том, что нужный вам файл или подкаталог существует. Только после этого вы переходите в ту среду, где будет протекать ваша работа. В процессе работы часто появляется необходимость просмотра содержимого пассивного каталога. Работу с новым диском вы также предваряете просмотром его каталога. Для всех этих ситуаций и многих других воспользуйтесь командой DIR.
+						
+						В зависимости от параметров, допустимых в структуре команды, можно просмотреть записи каталога в стандартной форме или в усеченной форме с выводом только полных имен файлов, а также при большом каталоге выводить его постранично.
+						
+						Формат команды
+						
+						Назначение основных параметров:
+						/Р - постраничный вывод каталога на экран. Для продолжения вывода нажать любую клавишу,
+						/W - вывод только полных имен файлов и каталогов.
+						/А - индикация содержимого каталогов с атрибутами;
+						/O - задание порядка сортировки выводимых сведений в каталоге и др.
+						
+						C:\>DIR	Вывод содержимого главного текущего каталога на экран.
+						C:\KAT1>DIR*.BAK	Вывод на экран всех имен файлов типа .ВАК из текущего каталога первого уровня KATI.
+						C:\>DIR A:	Вывод на экран содержимого каталога пассивного дисковода А.
+						C:\B1>DIR B2	Вывод на экран содержимого пассивного каталога 2-го уровня B2, находящегося в каталоге первого уровня В 1.
+						C:\KAT1>DIR\B1\B2/P	Вывод на экран постранично содержимого пассивного подкаталога B2, который находится в другой ветке иерархической структуры каталога, чем текущий каталог КАТ1. Для перехода к следующей странице надо нажать любую клавишу.
+						C:\B1>DIR/W	Вывод на экран записей текущего каталога В1 в усеченном формате (только полные имена файлов и каталогов).</p>
+
+					
+					
+					
+					<p>КОММЕНТАРИЙ: Команда сравнивает содержимое файлов. Если вы сравниваете два текстовых файла, используйте переключение /А и /L, чтобы выдать результаты в ASCII форме. COPY</p>
+				</div>
+
+				<div class="features">
+					<h2 class="twenty">Пример:</h2>
+
+					<ul>
+						<li>C:\>DIR	Вывод содержимого главного текущего каталога на экран.
+							C:\KAT1>DIR*.BAK	Вывод на экран всех имен файлов типа .ВАК из текущего каталога первого уровня KATI.
+							C:\>DIR A:	Вывод на экран содержимого каталога пассивного дисковода А.
+							C:\B1>DIR B2	Вывод на экран содержимого пассивного каталога 2-го уровня B2, находящегося в каталоге первого уровня В 1.
+							C:\KAT1>DIR\B1\B2/P	Вывод на экран постранично содержимого пассивного подкаталога B2, который находится в другой ветке иерархической структуры каталога, чем текущий каталог КАТ1. Для перехода к следующей странице надо нажать любую клавишу.
+							C:\B1>DIR/W	Вывод на экран записей текущего каталога В1 в усеченном формате (только полные имена файлов и каталогов).</li>
+						
+					</ul>
+				</div>
+
+			</section>
+
+			<section id="installation">
+				<div class="content-header">
+					<h1>Управление дисками</h1>
+				</div>
+				<h2 class="title">Для управления дисками в ОС MS-DOS наиболее часто используются следующие
+
+					команды:</h2>
+
+				<div class="section-content">
+					<ol>
+						<li></li>
+						FORMAT - Форматирование диска для работы с MS-DOS.
+
+						FORMAT диск: [/V[:метка]] [/Q] [/F:размер] [/B | /S] [/C]
+						
+						FORMAT диск: [/V[:метка]] [/Q] [/T:дорожки /N:секторы] [/B | /S] [/C]
+						
+						FORMAT диск: [/V[:метка]] [/Q] [/1] [/4] [/B | /S] [/C]
+						
+						FORMAT диск: [/Q] [/1] [/4] [/8] [/B | /S] [/C]
+						
+						/V[:метка] Метка создаваемого тома.
+						
+						/Q Выполнение быстрого форматирования (очистка системных областей
+						
+						диска - FAT и корневого каталога).
+						
+						/F:размер Размер форматируемого диска (например 160, 180, 320, 360, 720, 1.2, 1.44, 2.88).
+						
+						/B Отвод на диске места под системные файлы.
+						
+						/S Копирование на отформатированный диск системных файлов.
+						
+						/T:дорожки Число дорожек на каждой стороне диска.
+						
+						/N:секторы Число секторов, приходящееся на одну дорожку.
+						
+						/1 Форматирование только первой стороны диска.
+						
+						/4 Форматирование диска 5,25", 360 Кбайт в дисководе для дисков высокой плотности.
+						
+						/8 Форматирование с созданием 8 секторов на дорожке.
+						
+						/C Проверка кластеров, помеченных как поврежденные.
+					</ol>
+					2. FDISK - Управление разделами жесткого диска. Позволяет создавать и удалять разделы DOS на жестком диске.
+				</ol>
+				<ol>
+					2.1. COPY - Копирование файлов.
+
+					COPY [/A | /B] источник [/A | /B] [+ источник [/A | /B] [+ ...]] [результат
+					
+					[/A | /B]] [/V] [/Y | /-Y]
+					
+					источник Имя копируемого файла (файлов).
+					
+					/A Файл является текстовым файлом ASCII.
+					
+					/B Файл является двоичным.
+					
+					результат Каталог для размещения и/или имя создаваемого файла.
+					
+					/V Проверка правильности копирования путем сравнения файлов.
+					
+					/Y Отключение режима запроса подтверждения на замену файлов.
+					
+					/-Y Включение режима запроса подтверждения на замену файлов.
+					
+					Ключ /Y может быть установлен с помощью переменной среды COPYCMD.
+					
+					Ключ /-Y, заданный непосредственно в командной строке, имеет над ним приоритет.
+					
+					Чтобы объединить несколько файлов в один, необходимо указать единственный
+					
+					конечный файл и несколько исходных (путем использования подстановочных
+					
+					знаков или формата файл1+файл2+файл3).
+				</ol>
+				</div>
+				
+				
+			</section>
+
+
+			<section id="tmpl-structure">
+				<h2 class="title">Профилактика</h2>
+				<p class="fifteen">ST506/412
+					Интерфейс ST506/412 устарел. Он использовался преимущественно в компьютерах IBM PC/XT и IBM PC/AT с емкостью диска порядка 20 - 40 Мбайт. Характерный признак этого интерфейса - подключение НМД к контроллеру при помощи двух плоских кабелей. Один кабель широкий, в нем 34 жилы, второй состоит из 20 жил.
+					
+					К одному контроллеру ST506/412 может быть подключено два НМД. В этом случае используется три кабеля - один широкий с двумя разъемами, и два узких. Каждый НМД подключается к контроллеру отдельным узким кабелем, но широкий кабель только один.
+					
+					Если ваш НМД подключается к контроллеру таким способом, то у вас скорее всего установлен контроллер с интерфейсом ST506/412 , и вам имеет смысл заняться оптимизацией такой характеристики диска, как фактор чередования .
+				   
+				</p>
+				<p>ESDI
+Интерфейс ESDI также устарел и встречается очень редко. Этот интерфейс, как правило, не требует оптимизации фактора чередования . Контроллер ESDI также подключается к НМД двумя кабелями шириной 34 и 20 жил.
+
+Дополнительный признак, по которому можно отличить контроллер ESDI от контроллера ST506/412 - наличие на плате контроллера микросхемы постоянного запоминающего устройства. Эта микросхема установлена на панельке.
+
+Низкоуровневое форматирование НМД, подключенного к контроллеру ESDI , должно выполняться с помощью программы, записанной в ПЗУ контроллера, как это будет описано в разделе "Низкоуровневое форматирование".
+
+Если у вас не получается запустить программу низкоуровневого форматирования, находящуюся в ПЗУ контроллера, наиболее вероятная причина заключается в том, что тип вашего контроллера - не ESDI , а ST506/412 или IDE . </p>
+              <p></p>
+	
+
+				<pre class="brush: html">
+				
+			</section>
+
+
+			<section id="css-structure">
+				
+		            <!--
+                    CSS
+                    ============================================= -->
+                    <!-- Bootstrap CSS -->
+					<!-- CSS here -->
+					<link rel="stylesheet" href="css/bootstrap.min.css">
+					<link rel="stylesheet" href="css/owl.carousel.min.css">
+					<link rel="stylesheet" href="css/magnific-popup.css">
+					<link rel="stylesheet" href="css/font-awesome.min.css">
+					<link rel="stylesheet" href="css/themify-icons.css">
+					<link rel="stylesheet" href="css/gijgo.css">
+					<link rel="stylesheet" href="css/nice-select.css">
+					<link rel="stylesheet" href="css/animate.css">
+					<link rel="stylesheet" href="css/flaticon.css">
+					<link rel="stylesheet" href="css/slicknav.css">
+				
+					<link rel="stylesheet" href="css/style.css">
+                </pre>
+
+                <h2 class="title">Командная строка (DOS) bat-файлы</h2>
+
+                <p>ECHO [ON | OFF | Текст]
+					Команда ECHO используется для управления эхо-режимом, то есть режимом отображения на экране служебной информации. ECHO OFF запрещает этот вывод, а ECHO ON — разрешает. ECHO <Текст> используется для вывода текста на устройство (на экран, COM или LPT-порты). То есть, команда
+					ECHO Привет!
+					выведет на экран «Привет!». А команда
+					ECHO ATDP 21435 > COM2
+					пошлет на устройство на порте COM2 (например, на модем) команду ATDP 21435, то есть, набор номера 21435.
+					
+					
+					@<команда>
+					Оператор @. позволяет не выводить следующую за ним команду на экран. Это аналог оператора ECHO OFF только для одной строки. Часто используется следующим образом в начале многих пакетных файлов:
+					@ECHO OFF
+					Это позволяет не выводить и саму запрещающую строку ECHO OFF при выполнении пакетных файлов.
+					
+					
+					GOTO <метка>
+					Оператор GOTO осуществляет безусловный переход на метку внутри этого же файла. Метка обозначается следующим образом:
+					:label
+					то есть, со знаком двоеточия в начале. Для перехода к такой метке будет служить команда
+					GOTO label
+					в любом месте BAT-файла.</p>
+
+                <pre class="brush:html">		                
+						<!--
+						Google Font
+						=========================== -->
+						<link href="https://fonts.googleapis.com/css?family=Anton|Monoton|Muli:400,400i,500,500i,600&display=swap" rel="stylesheet"> 
+					</pre>
+
+					<p class="twenty">имя оканчивается на <strong>.bat</strong></p>
+				</section>
+
+				<section id="javascript">
+				
+                  <!--
+                  JavaScripts
+                  ========================== -->
+					
+				<!-- JS here -->
+				<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+				<script src="js/vendor/jquery-1.12.4.min.js"></script>
+				<script src="js/popper.min.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script src="js/owl.carousel.min.js"></script>
+				<script src="js/isotope.pkgd.min.js"></script>
+				<script src="js/ajax-form.js"></script>
+				<script src="js/waypoints.min.js"></script>
+				<script src="js/jquery.counterup.min.js"></script>
+				<script src="js/imagesloaded.pkgd.min.js"></script>
+				<script src="js/scrollIt.js"></script>
+				<script src="js/jquery.scrollUp.min.js"></script>
+				<script src="js/wow.min.js"></script>
+				<script src="js/nice-select.min.js"></script>
+				<script src="js/jquery.slicknav.min.js"></script>
+				<script src="js/jquery.magnific-popup.min.js"></script>
+				<script src="js/plugins.js"></script>
+				<script src="js/gijgo.min.js"></script>
+
+				<!--contact js-->
+				<script src="js/contact.js"></script>
+				<script src="js/jquery.ajaxchimp.min.js"></script>
+				<script src="js/jquery.form.js"></script>
+				<script src="js/jquery.validate.min.js"></script>
+				<script src="js/mail-script.js"></script>
+
+
+				<script src="js/main.js"></script>
+              </pre>
+
+          </section>
+
+          <section id="contact-form">
+          	<h1 class="title"> Настройка DOS</h1>
+          	<p>Теперь нужно настроить структуру каталогов на жестком диске. В любом удобном месте с помощью проводника Windows необходимо создать каталог DOS (вы можете назвать его иначе, но в этом случае не забудьте изменить команды, которые будете прописывать в конфигурационные файлы). Проще всего его создать в корневом каталоге диска C.
+
+				C:\DOS
+				2. В каталоге DOS создайте подкаталоги DN, GAMES, IMAGES.
+				
+				C:\DOS\DN
+				C:\DOS\GAMES
+				C:\DOS\IMAGES <strong> В каталог DN распакуйте из архива DOS Navigator</strong> to your email to start receive messages.</p>
+          	<pre class="brush:php">
+          		<table style="width:100%">
+          			<tr>
+          				<td>mount D D:\ -t cdrom
+							C:
+							cls
+							C:\DN\dn.com
+							exit</td>
+          			</tr>
+          			<tr>imgmount D C:\DOS\IMAGES\disk1.iso C:\DOS\IMAGES\disk2.iso ... -t cdrom<td>
+						где C:\DOS\IMAGES\ — путь в Windows, где хранятся ваши образы дисков, а disk1.iso, disk2.iso и т. д. — имена файлов образов, которые вы хотите подключить к виртуальной машине. Переключение между дисками в DOSBox осуществляется клавишами Ctrl+F4.
+					</td>I/O ADRESS=220
+					IRQ=7
+					DMA=1</tr>
+          		</table>
+          	}
+          </pre>		            
+      </section>
+      <section id="subscription-form">
+      	<h2 class="title"> Фоточки) </h2>
+      	<p>Это тип фотки как я делал сайт. Хоят это некому не надоя приёмный</p>
+      	<pre class="brush: javascript">
+      		<div id="mc_embed_signup">
+				<a href="https://ibb.co/YDHtcMQ"><img src="https://i.ibb.co/wJ5KSXg/Hx-GKp-H6q-VAQ.jpg" alt="Hx-GKp-H6q-VAQ" border="0"></a>
+<a href="https://ibb.co/PZ1HF1H"><img src="https://i.ibb.co/XZFRjFR/He-Fi-Ds61-ULg.jpg" alt="He-Fi-Ds61-ULg" border="0"></a>
+<a href="https://ibb.co/YBgX5Ss"><img src="https://i.ibb.co/b5tF4V9/Hcr-EMwk-A2kw.jpg" alt="Hcr-EMwk-A2kw" border="0"></a>
+<a href="https://ibb.co/zZS2Xvk"><img src="https://i.ibb.co/RcC63w5/PO-Kjey5-Cv8.jpg" alt="PO-Kjey5-Cv8" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/RTr8QLs/8g-TJl-SZBZP0.jpg" alt="8g-TJl-SZBZP0" border="0"></a>
+<a href="https://ibb.co/SRDYhyk"><img src="https://i.ibb.co/V20n79F/05-12-2022-195057.jpg" alt="05-12-2022-195057" border="0"></a>
+				  
+<a href="/mdk/save" class="button7">Скачать этот сайт ТЫК</a>
+      			<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative d-flex justify-content-center"></form>
+      		</div>
+      	</pre>		            
+      </section>
+      
+
+
+		<!-- Essential JavaScript Libraries
+			==============================================-->
+			<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+			<script type="text/javascript" src="js/jquery.nav.js"></script>
+			<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+			<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+			<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+			<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+			<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+			<script type="text/javascript">
+				SyntaxHighlighter.all()
+			</script>
+			<script type="text/javascript" src="js/custom.js"></script>
+
+		</body>
+		</html>

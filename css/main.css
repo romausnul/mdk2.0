@@ -1,0 +1,253 @@
+
+ body{
+    background-color: green
+    background-image: url(/img/1.gif);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 3%, rgba(14,215,6,0.7231267507002801) 35%, rgba(196, 22, 80, 0.807) 95%);
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+	font-size:16px;
+	line-height:18px;
+	color:rgb(179, 49, 49);
+}
+
+html {
+    background-image: url(/img/1.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+p{
+	margin:0;
+}
+
+a {
+    color: #c52279;
+}
+
+a, a:hover, a:focus{
+	text-decoration: none;
+	outline: 0;
+}
+h1, h2, h3,
+h4, h5, h6 {
+    color: #333;
+	margin:0;
+    font-weight: normal;
+}
+
+h1 { font-size: 28px;}
+h2 { font-size: 24px;}
+h3 { font-size: 18px;}
+h5 { font-size: 16px;}
+h6 { font-size: 14px;}
+
+strong {
+  letter-spacing: 1px;
+}
+
+code {
+  background-color: rgb(27, 27, 27);
+  border-radius: 3px;
+  color: rgb(0, 0, 0)
+  font-size: 85%;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+code a {
+    color: #333;
+}
+
+code a:hover {
+    text-decoration: underline;
+}
+
+section p {
+  line-height: 28px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.tan {
+  margin-bottom: 10px;
+}
+
+.fifteen{
+    margin-bottom: 15px;
+}
+
+.twenty{
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.title {
+    margin: 50px 0 30px;
+}
+
+.syntaxhighlighter {
+    border: 1px solid #000000;
+    max-height: 100% !important;
+    padding: 20px 0;
+}
+
+
+.main-content section {
+  margin: 0 5%;
+}
+
+
+.left-sidebar {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(143, 230, 182) 0%, rgba(56,207,8,1) 70%, rgba(0,236,255,1) 100%);
+    background-color: linear-gradient(90deg, rgb(141, 224, 178) 0%, rgb(23, 71, 8) 70%, rgba(0,236,255,1) 100%);
+    float: left;
+    min-height: 100%;
+    position: fixed;
+    width: 18%;
+}
+
+.logo {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 70px;
+}
+.logo h1{
+    color: rgb(211, 60, 0);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.left-nav ul {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.left-nav ul li a {
+    color: rgb(24, 0, 163);
+    display: block;
+    padding: 10px 35px;
+    -webkit-transition: all 0.3s ease-in 0s;
+       -moz-transition: all 0.3s ease-in 0s;
+        -ms-transition: all 0.3s ease-in 0s;
+         -o-transition: all 0.3s ease-in 0s;
+            transition: all 0.3s ease-in 0s;
+}
+
+.left-nav ul li a:hover, .left-nav ul li .current {
+    
+    background-color: rgb(94, 182, 12);
+    color: #000;
+}
+
+
+#main-wrapper {
+    float: left;
+    margin-left: 18%;
+    width: 82%;
+}
+
+.content-header {
+    border-bottom: 1px solid rgb(109, 24, 24);
+    border-top: 1px solid rgb(58, 40, 40);
+    margin-top: 30px;
+    padding: 30px 0 35px;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 35px auto 0;
+}
+
+.features {
+    margin-top: 50px;
+}
+
+.features ul li {
+    list-style: square outside none;
+    margin-bottom: 15px;
+}
+
+.features > ul {
+    padding-left: 18px;
+}
+
+.author {
+    border-bottom: 1px solid rgb(128, 16, 16);
+    border-top: 1px solid rgb(122, 71, 71);
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+.author-info {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.section-content {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.section-content li {
+    margin-bottom: 15px;
+}
+
+.section-content a:hover {
+    text-decoration: underline;
+}
+
+.script-source li {
+    list-style: square outside none;
+    margin-bottom: 10px;
+}
+
+#twitter-feed li,
+#flickr li {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+#twitter-feed img {
+    border: 1px solid rgb(226, 17, 17);
+    box-shadow: 2px 3px 3px rgb(212, 24, 24);
+    height: auto;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
